@@ -63,8 +63,9 @@ body {
     transition: background-color 500ms linear;
 }
 
-.chart__item:hover {
-    background-color: rgba(255, 255, 255, 0.2);
+.chart__item:hover
+ {
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .chart__link,
@@ -86,8 +87,8 @@ body {
     transition: color 500ms linear;
 }
 
-.chart__label:hover {
-    color: #fff;
+.chart__item:hover .chart__label {
+    color: rgba(255, 255, 255, 1);
 }
 
 .chart__bar-wrap {
@@ -108,8 +109,8 @@ body {
     transition: background-color 500ms linear;
 }
 
-.chart__bar:hover {
-    background-color: rgba(30, 193, 255, 0.6);
+.chart__item:hover .chart__bar {
+    background-color: rgba(116, 216, 255, 0.92);
 }
 
 .chart__count {
@@ -127,6 +128,8 @@ body {
   opacity: 0;
 
   text-align: center;
+    
+    transition: all 250ms linear;
 }
 
 .chart__count::after {
@@ -141,4 +144,9 @@ body {
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   border-top: 10px solid #000;
+}
+
+.chart__item:hover .chart__count {
+    opacity: 1;
+    top: -3.5em;
 }
