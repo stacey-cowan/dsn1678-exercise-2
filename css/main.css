@@ -105,6 +105,8 @@ body {
   top: 0;
 
   background-color: rgba(127, 219, 255, 0.6);
+    -webkit-animation: slide-up 2000ms linear;
+    animation: slide-up 2000ms linear;
 
     transition: background-color 500ms linear;
 }
@@ -149,4 +151,28 @@ body {
 .chart__item:hover .chart__count {
     opacity: 1;
     top: -3.5em;
+}
+
+@-webkit-keyframes slide-up {
+
+    0% {
+        top: 10em;  
+        }
+        
+    100% {
+        top: 0; 
+        }
+
+}
+
+@keyframes slide-up {
+
+    0% {
+        top: 10em;  
+        }
+        
+    100% {
+        top: 0; 
+        }
+
 }
