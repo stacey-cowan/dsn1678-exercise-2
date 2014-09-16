@@ -92,6 +92,14 @@ body {
   top: 0;
 
   background-color: rgba(127, 219, 255, 0.6);
+
+    transition: background-color 250ms ease-in-out;
+}
+
+.chart__bar:hover,
+.chart__bar:focus,
+.chart__bar:active {
+    background-color: rgba(190, 237, 255, 0.6);
 }
 
 .chart__count {
