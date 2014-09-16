@@ -60,7 +60,7 @@ body {
 
   background-color: rgba(204, 204, 204, 0);
     
-    transition: background-color 500ms ease-in-out;
+    transition: background-color 500ms linear;
 }
 
 .chart__item:hover {
@@ -105,12 +105,10 @@ body {
 
   background-color: rgba(127, 219, 255, 0.6);
 
-    transition: background-color 500ms ease-in-out;
+    transition: background-color 500ms linear;
 }
 
-.chart__bar:hover,
-.chart__bar:focus,
-.chart__bar:active {
+.chart__bar:hover {
     background-color: rgba(30, 193, 255, 0.6);
 }
 
